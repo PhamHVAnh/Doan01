@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C014D95-B6FE-4541-B3C9-44886130C3CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Doan01</RootNamespace>
+    <AssemblyName>Doan01</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI_Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Dangnhap.Designer.cs">
+      <DependentUpon>GUI_Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Doimatkhau.Designer.cs">
+      <DependentUpon>GUI_Doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Hoadonban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Hoadonban.Designer.cs">
+      <DependentUpon>GUI_Hoadonban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Hoadonnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Hoadonnhap.Designer.cs">
+      <DependentUpon>GUI_Hoadonnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Khachhang.Designer.cs">
+      <DependentUpon>GUI_Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Loaisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Loaisp.Designer.cs">
+      <DependentUpon>GUI_Loaisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Matkhaumoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Matkhaumoi.Designer.cs">
+      <DependentUpon>GUI_Matkhaumoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Nhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Nhacungcap.Designer.cs">
+      <DependentUpon>GUI_Nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Nhanvien.Designer.cs">
+      <DependentUpon>GUI_Nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Sanpham.Designer.cs">
+      <DependentUpon>GUI_Sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Taikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Taikhoan.Designer.cs">
+      <DependentUpon>GUI_Taikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Thongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Thongke.Designer.cs">
+      <DependentUpon>GUI_Thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Trangchu.Designer.cs">
+      <DependentUpon>GUI_Trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Trogiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Trogiup.Designer.cs">
+      <DependentUpon>GUI_Trogiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanlyDDHTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlyDDHTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="XuatHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHDB.Designer.cs">
+      <DependentUpon>XuatHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHDN.Designer.cs">
+      <DependentUpon>XuatHDN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI_Dangnhap.resx">
+      <DependentUpon>GUI_Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Doimatkhau.resx">
+      <DependentUpon>GUI_Doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Hoadonban.resx">
+      <DependentUpon>GUI_Hoadonban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Hoadonnhap.resx">
+      <DependentUpon>GUI_Hoadonnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khachhang.resx">
+      <DependentUpon>GUI_Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Loaisp.resx">
+      <DependentUpon>GUI_Loaisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Matkhaumoi.resx">
+      <DependentUpon>GUI_Matkhaumoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Nhacungcap.resx">
+      <DependentUpon>GUI_Nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Nhanvien.resx">
+      <DependentUpon>GUI_Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Sanpham.resx">
+      <DependentUpon>GUI_Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Taikhoan.resx">
+      <DependentUpon>GUI_Taikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Thongke.resx">
+      <DependentUpon>GUI_Thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Trangchu.resx">
+      <DependentUpon>GUI_Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Trogiup.resx">
+      <DependentUpon>GUI_Trogiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDB.rdlc" />
+    <EmbeddedResource Include="HDN.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XuatHDB.resx">
+      <DependentUpon>XuatHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHDN.resx">
+      <DependentUpon>XuatHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BUS\BUS.csproj">
+      <Project>{0c28dfe2-80ee-48d0-8863-42d256d16c7f}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="DTO\DTO.csproj">
+      <Project>{55fac0bb-aa61-4aae-99df-5d96fc760322}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanlyDDHTDataSet.xsc">
+      <DependentUpon>QuanlyDDHTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyDDHTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlyDDHTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlyDDHTDataSet.xss">
+      <DependentUpon>QuanlyDDHTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\icons8-forgot-password-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
